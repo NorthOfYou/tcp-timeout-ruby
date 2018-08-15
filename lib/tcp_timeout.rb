@@ -8,7 +8,7 @@ module TCPTimeout
     getsockopt setsockopt
     local_address remote_address
     read_nonblock write_nonblock
-    fileno
+    fileno sync=
   ]
 
   class SocketTimeout < SocketError; end
